@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head><title>{{ app_name }} home</title></head>
+<body>
+  <h1>Welcome to app_name</h1>
+  {% for item in items %}
+    <div>{{ item }}</div>
+  {% empty %}
+    <div>No items yet</div>
+  {% endfor %}
+</body>
+</html>
